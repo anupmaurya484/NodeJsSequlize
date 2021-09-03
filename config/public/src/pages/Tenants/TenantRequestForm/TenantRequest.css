@@ -1,9 +1,0 @@
-.or-seperator i {
-    padding: 0 10px;
-    position: relative;
-    top: -10px !important;
-    background: inherit !important; 
-    z-index: 1;
-    text-transform: uppercase;
-    font-weight: bold;
-}
