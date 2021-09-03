@@ -1,0 +1,305 @@
+@import '../../../assets/scss/base';
+
+.table-workflow-version i{
+    cursor: pointer !important;
+}
+.worflow-design-tab {
+    .panel-heading {
+        position: absolute !important;
+        left: 0px !important;
+        width: 100% !important;
+        top: -45px !important;
+        border-bottom: 2px solid !important;
+    }
+}
+.worflow-design-panel {
+    flex-direction: row !important;
+    right: 0 !important;
+    position: absolute !important;
+    z-index: 99 !important;
+    width: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.designer-container {
+    margin-top: 0;
+    background-color: #fff;
+    #designer-taskpalette-canvas {
+        position: absolute;
+    }
+    .designer-function-btns {
+        display: flex;
+        flex-direction: row;
+        right: 0;
+        top: $header-height + $header-margin;
+        position: absolute;
+        z-index: 99;
+        .function-button {
+            background-color: $grey-color-300;
+            color: $new-grey-color;
+            margin-right: 10px;
+            width: 80px;
+            height: $designer-tab-func-btn-height;
+            line-height: $designer-tab-func-btn-height;
+            border: 1px solid $node-border-color;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+                background-color: $grey-color-600;
+                color: $white-color;
+            }
+        }
+    }
+    .designer-flowchart-setting-tab {
+        padding: $layout-padding $layout-padding-hor;
+        .designer-flowchart-setting-inner {
+            display: flex;
+            flex-wrap: wrap;
+            .designer-flowchart-detail {
+                flex: 1;
+                padding: 15px;
+            }
+            .designer-flowchart-variables {
+                flex: 1;
+                padding: 15px;
+                .designer-flowchart-variables-title {
+                    font-size: 21px;
+                    border-bottom: 1px solid #e5e5e5;
+                    margin-bottom: 20px;
+                    display: flex;
+                    span:not(.fa) {
+                        flex: 1;
+                    }
+                    .fa {
+                        color: $orange-color-500;
+                        cursor: pointer;
+                        &:hover {
+                            color: $orange-color-400;
+                        }
+                    }
+                }
+            }
+            .designer-flowchart-permission {
+                flex-basis: 100%;
+                padding: 15px;
+            }
+        }
+    }
+    .designer-tab-wrapper {
+        width: 40%;
+        z-index: 99999;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 18px; //$header-height + $header-margin - ($designer-tab-height - $designer-tab-func-btn-height)/2;
+        display: flex;
+        .designer-tab-item {
+            cursor: pointer;
+            width: $designer-tab-width;
+            background-color: $grey-color-300;
+            color: $new-grey-color;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            text-align: center;
+            height: $designer-tab-height;
+            line-height: $designer-tab-height;
+            &:hover {
+                background-color: $grey-color-600;
+            }
+            &.active {
+                color: $grey-color-900;
+                background-color: $white-color;
+                border-bottom: 0;
+            }
+        }
+        .designer-tab-empty {
+            // border-bottom: 1px solid $node-border-color;
+            flex: 1;
+        }
+    }
+    .designer-wrapper {
+        width: 100%;
+        height: calc(100vh - 65px - 40px);
+        overflow: hidden;
+        position: relative;
+        // border-top: 1px solid $node-border-color;
+        #designer-area {
+            position: relative;
+            height: 0;
+            width: 0;
+            // background-color: #E0E0E0;
+            overflow: scroll;
+            overflow: visible;
+            .fc-item {
+                width: 20px;
+                height: 20px;
+                background: $white-color;
+                &.fc-item-draggable {
+                    position: absolute;
+                    cursor: pointer;
+                }
+            }
+            #node-start,
+            #node-end {
+                height: $node-start-end-size;
+                width: $node-start-end-size;
+                border-radius: 50%;
+                border: solid 1px $node-border-color;
+                text-align: center;
+                span {
+                    line-height: $node-start-end-size;
+                    font-size: $node-start-end-size*0.5;
+                }
+            }
+            .fc-item-default {
+                cursor: pointer;
+                border-radius: 0.125rem;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+                    box-shadow 0.15s ease-in-out;
+                width: 160px;
+                color: $grey-color-600;
+                margin-bottom: $layout-padding-hor;
+                border-radius: 4px;
+                height: $palette-item-height;
+                font-size: $fts-body;
+                line-height: $palette-item-height;
+                text-align: left;
+                background-color: $white-color;
+                display: flex;
+                &.is-disabled {
+                    background-color: $disabled-color;
+                }
+                .task-palette-icon {
+                    width: $icon-size + 1rem;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    line-height: $palette-item-height;
+                    background-color: #e0f7fa;
+                    margin-right: $layout-padding-ver;
+                }
+                .task-palette-title {
+                    text-align: left;
+                    flex: 1;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    font-size: 0.8rem;
+                    color: #6c757d;
+                    font-weight: 600;
+                }
+            }
+            .fc-item-end-point {
+                height: 0;
+                width: 0;
+            }
+            #node-start {
+                color: $designer-green;
+            }
+            #node-end {
+                color: $designer-red;
+            }
+        }
+    }
+    .task-iconmenu-container {
+        position: absolute;
+        z-index: 2;
+        .task-iconmenu-inner {
+            position: relative;
+            .task-iconmenu-btn {
+                height: $task-iconmenu-size;
+                width: $task-iconmenu-size;
+                top: -$task-iconmenu-size*0.5;
+                left: -$task-iconmenu-size*0.5;
+                background-color: $white-color;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+                    box-shadow 0.15s ease-in-out;
+                border-radius: 50%;
+                // border: 1px solid $node-border-color;
+                position: absolute;
+                z-index: 99999999;
+                text-align: center;
+                line-height: $task-iconmenu-size;
+                &:hover {
+                    background-color: $grey-color-200;
+                }
+            }
+            .task-iconmenu-board {
+                position: absolute;
+                left: $task-iconmenu-size*0.5;
+                background-color: $white-color;
+                display: none;
+                .task-iconmenu-board-inner {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid $node-border-color;
+                    font-size: $fts-body;
+                    top: -14px;
+                    .task-iconmenu-item {
+                        padding: $layout-padding-ver;
+                        line-height: $task-iconmenu-item-size;
+                        display: flex;
+                        &:hover {
+                            background-color: $grey-color-200;
+                        }
+                        .fa {
+                            font-size: $task-iconmenu-size;
+                            margin-right: $layout-padding-ver;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .task-iconmenu-board {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.jtk-overlay {
+    width: $designer-tab-width;
+    height: $designer-tab-height;
+    &.onDroping {
+        background-color: $grey-color-400;
+    }
+    .dropable-zone {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        background-color: $white-color;
+        text-align: center;
+        color: $blue-color-500;
+        height: $node-start-end-size*0.5;
+        width: $node-start-end-size*0.5;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+    }
+}
+
+.workflow-history-log {
+    padding: 6px !important;
+    height: 26px;
+    span {
+        display: flex;
+        border-bottom: 0 !important;
+        span {
+            line-height: 12px;
+            border-bottom: 0 !important;
+            margin-right: 13px;
+            font-size: 13px;
+            margin-left: 13px;
+        }
+        i {
+            line-height: 10px;
+            font-size: 19px;
+        }
+    }
+}

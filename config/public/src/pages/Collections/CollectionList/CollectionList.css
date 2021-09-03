@@ -1,0 +1,81 @@
+html,body {
+	height: 100%;
+}
+
+.full-height {
+	min-height: 80vh;
+}
+
+.collection-list {
+	margin-top: 20px;
+}
+
+.collection-card {
+	height: 100px;
+	width: 140px;
+	color: black;
+	background-color: #e1dede;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.collection-card .collection-name {
+	height: 80%;
+	display: block;
+	padding: 15px;
+	font-weight: 500;
+}
+
+.collection-card .collection-name .new-collection-icon {
+	margin-top: 15%;
+	font-size: 45px;
+	display: block;
+}
+
+.collection-card > a {
+	float: left;
+	width: 50%;
+	color: white;
+	height: 20%;
+	bottom: 0;
+	border-top: solid 2px white;
+	line-height: 1.7;
+}
+
+.collection-card .link-open {
+	/* background-color: #4caf50; */
+	background-color: #5b8cbf;
+	border-bottom-left-radius: 15px;
+	border-right: solid 1px white;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+}
+
+.collection-card .link-edit {
+	background-color: #545690;
+	/* background-color: #f57c00; */
+	border-bottom-right-radius: 15px;
+	border-left: solid 1px white;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+}
+
+.multi-line {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	min-height: 65px;
+	}
+	
+	@media (max-width: 1024px) and (min-width: 600px) {
+		.card-footer.p-0.d-flex.justify-content-center{
+			flex-direction: column;
+		}
+	}

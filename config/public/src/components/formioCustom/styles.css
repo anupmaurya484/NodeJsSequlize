@@ -1,0 +1,121 @@
+.App1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#root1 {
+  margin: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 15px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.progressNode {
+  position: absolute;
+  margin-top: -10px;
+  z-index: 1;
+  height: 30px;
+  width: 30px;
+  border-radius: 25px;
+}
+
+.nodeLabel {
+  margin-top: 40px;
+}
+
+.primary-color {
+  background-color: #4989bd;
+}
+.success-color {
+  background-color: #5cb85c;
+}
+.danger-color {
+  background-color: #d9534f;
+}
+.warning-color {
+  background-color: #f0ad4e;
+}
+.info-color {
+  background-color: #5bc0de;
+}
+.no-color {
+  background-color: inherit;
+}
+
+.image-upload > input {
+  display: none;
+}
+.image-upload > label {
+  margin-bottom: 0 !important;
+}
+
+.image-upload img {
+  width: 80px;
+  cursor: pointer;
+}
+
+.edit-icon-picture-annotation{
+  border: 1px solid #fff;
+  width: 15px;
+  padding-left: 1.2px;
+  height: 15px;
+  border-radius: 2px;
+  background: #fff;
+}

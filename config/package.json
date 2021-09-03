@@ -1,0 +1,33 @@
+{
+  "name": "nodejs2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "nodemailer": "^6.4.13",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "@types/nodemailer": "^6.4.0",
+    "@types/oauth2-server": "^3.0.12",
+    "@types/validator": "^13.1.0",
+    "crypto-js": "^4.0.0",
+    "enum": "^3.0.4",
+    "errorhandler": "^1.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
+    "oauth2-server": "^3.1.1",
+    "sequelize": "^6.3.3",
+    "sequelize-hierarchy": "^2.0.4",
+    "ts-node-dev": "^1.0.0-pre.51",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

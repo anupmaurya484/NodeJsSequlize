@@ -1,0 +1,307 @@
+.form-input {
+    text-align: left;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  
+  .form-input .json-form {
+    text-align: left;
+  }
+  
+  .form-input .json-form label {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .form-input .json-form p {
+    position: relative;
+  }
+  
+  .form-input .json-form legend {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+  }
+  
+  .form-input .json-form fieldset {
+    padding: 20px;
+  }
+  
+  .form-input .json-form .btn-info {
+    /* position: absolute;
+      right: 3px;
+      width: 150px; */
+    float: right;
+  }
+  
+  .form-input .json-form i.glyphicon {
+    display: none;
+  }
+  
+  .form-input .json-form .btn-add::after {
+    content: "Add";
+    background-color: #2196f3;
+  }
+  
+  .form-input .json-form .btn-add {
+    background-color: #2196f3;
+  }
+  
+  .form-input .json-form .array-item-remove::after {
+    content: "Remove";
+  }
+  .form-input .json-form .array-item-move-up::after {
+    content: "Move Up";
+  }
+  .form-input .json-form .array-item-move-down::after {
+    content: "Move Down";
+  }
+  
+  .form-input .json-form .array-item-remove {
+    background-color: #f44336;
+  }
+  
+  .form-input .json-form .array-field-container {
+    margin-top: 20px;
+  }
+  
+  .form-input .json-form .array-object-properties-row {
+    width: 100%;
+  }
+  
+  .form-input .json-form .array-object-properties-row label {
+    /* display: none; */
+  }
+  
+  .form-input .json-form .array-object-properties-row td {
+    margin: 5px;
+  }
+  
+  .form-input .json-form .array-object-properties-row input {
+    height: 2rem;
+  }
+  
+  .form-input .json-form tr.array-object-properties-row {
+    border: unset;
+  }
+  
+  .form-input .json-form tr.array-object-properties-row td {
+    padding: 5px 5px 0 5px;
+  }
+  
+  .form-input .json-form .array-item-table-head {
+    display: flex;
+    background-color: grey;
+    color: white;
+  }
+  
+  .form-input .json-form .array-item-table-head th {
+    flex: 1;
+    text-align: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 5px;
+  }
+  
+  .form-input .json-form .array-field-title {
+    font-weight: bold;
+  }
+  /* 
+  .form-input .json-form .btn-action-array-field {
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      padding: 0;
+      margin: 2px 2px;
+      font-size: 5px;
+  }
+  
+  .form-input .json-form .btn-action-array-field i {
+      line-height: 1rem;
+      font-size: 18px;
+  } */
+  
+  .form-input .rjsf .btn-actions-container {
+    width: 80px;
+    float: right;
+  }
+  
+  .form-input .rjsf .total-amount-container {
+    margin-top: 20px;
+  }
+  
+  .form-input .rjsf .total-amount-cell {
+    text-align: right;
+  }
+  
+  .form-input .rjsf #total-amount-array-items {
+    border-bottom: solid 1px #9e9e9e;
+  }
+  
+  .form-input .rjsf #sum-column-name {
+    height: 1.5rem;
+  }
+  
+  .form-input .rjsf .array-object-properties-row select {
+    height: 2rem;
+  }
+  
+  .rjsf fieldset {
+    border-color: transparent;
+    padding: 0 !important;
+    margin: 0;
+    width: 100% !important;
+  }
+  
+  .rjsf fieldset:before,
+  .rjsf fieldset:after {
+    display: table !important;
+    content: " " !important;
+  }
+  
+  .rjsf fieldset:after {
+    clear: both !important;
+  }
+  
+  .bootstrap .rjsf label {
+    color: black;
+    font-size: 12px;
+  }
+  
+  .bootstrap .rjsf input {
+    margin-top: 5px !important;
+    padding: 2px 5px !important;
+    border: 1px solid #9e9e9e !important;
+    height: 2rem !important;
+    border-radius: 5px !important;
+  }
+  
+  .bootstrap select {
+    margin-top: 5px !important;
+    border: 1px solid #9e9e9e !important;
+    padding: 2px 5px !important;
+    height: 2rem !important;
+    border-radius: 5px !important;
+  }
+  
+  .bootstrap .array-field-container input,
+  select {
+    margin-top: unset !important;
+    /* padding: unset !important;
+      padding-bottom: 5px !important; */
+    border: unset !important;
+    border-bottom: 1px solid #9e9e9e !important;
+    height: unset !important;
+    border-radius: unset !important;
+  }
+  
+  .cloudform a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .cloudform input:invalid {
+    border-color: #dd2c00;
+  }
+  
+  .cloudform .side-bar {
+    width: 250px;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .cloudform .side-bar__segment {
+    padding: 0.5rem 1rem;
+  }
+  
+  .cloudform .side-bar__segment--header {
+    margin: 1rem 0;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+  }
+  
+  .cloudform .side-bar__segment--header:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .cloudform .side-bar__segment--bottom {
+    font-weight: bold;
+    position: absolute;
+    bottom: 2rem;
+  }
+  
+  .cloudform .view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f2f2f3;
+  }
+  
+  .cloudform .side-bar__segment > label > input[type="number"],
+  .cloudform .side-bar__segment > label > input[type="text"] {
+    width: 150px;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+    margin: 0.5rem 0;
+    height: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  
+  .cloudform .side-bar__segment > label > input[type="checkbox"] {
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+    margin: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .cloudform .card > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cloudform .btn {
+    background-color: #3273dc;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cloudform .btn:disabled {
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: default;
+  }
+  
+  .cloudform .margin-top--small {
+    margin-top: 1rem;
+  }
+  
+  .cloudform .margin-top--medium {
+    margin-top: 1.5rem;
+  }
+  
+  .cloudform .margin-top--large {
+    margin-top: 4rem;
+  }
+  
+  .cloudform .error {
+    border: 1px solid red !important;
+  }
+  
+  .formio-view {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .language-dropdown{
+    position: absolute !important;
+    right: 0;
+    top: 45px;
+  }
+  

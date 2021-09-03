@@ -1,0 +1,306 @@
+/* .modal-lg{
+  max-width: 80% !important;
+} */
+
+
+.view-buttons{
+  border:1px solid ;
+  border-radius: 10px;
+}
+
+.Header-previewModal{
+   justify-content: flex-end !important;  
+}
+
+.border-gray{
+border: 2px solid #f6f6f6;
+}
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+   width: 330px;
+  height: 520px;
+  background: white;
+}
+
+/* The device with borders */
+.tablet {
+  position: relative;
+  width: 924px;
+  height: 568px;
+  margin: auto;
+  border: 16px black solid;
+  border-left-width: 60px;
+  border-right-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.tablet:before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 60px;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.tablet:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: -65px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.tablet .content {
+  width: 810px;
+  height: 540px;
+  background: white;
+  margin: -1px;
+}
+
+.md-imac {
+  width: 62.5em;
+  position: relative;
+  height: 50em;
+  margin: auto;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.md-imac .md-body {
+  width: 100%;
+  height: 43.125em;
+  background: #c6c7ca;
+  border-radius: 1.875em;
+  overflow: hidden;
+}
+
+.md-imac .md-top {
+  width: 100%;
+  height: 37.1875em;
+  background: #0f0f0f;
+  border-radius: 1.875em 1.875em 0 0;
+  position: relative;
+}
+
+.md-imac.md-glare .md-top:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 1.25em 0 0;
+  background: linear-gradient(48deg
+, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  transform: translate(-50%, -50%);
+}
+.md-imac .md-camera {
+  width: 0.375em;
+  height: 0.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 1.25em;
+  background: #000;
+  border-radius: 100%;
+  box-shadow: inset 0 -1px 0 rgb(255 255 255 / 25%);
+}
+
+.md-imac .md-camera:after {
+  content: "";
+  display: block;
+  width: 0.125em;
+  height: 0.125em;
+  position: absolute;
+  left: 0.125em;
+  top: 0.0625em;
+  background: #353542;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.md-imac .md-screen {
+  width: 57.5em;
+  height: 32.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 2.375em;
+  background: #17171a;
+  overflow: hidden;
+}
+
+.md-imac .md-base {
+  width: 19.25em;
+  height: 6.875em;
+  margin: -0.5em auto;
+}
+
+.md-imac .md-stand {
+  width: 13.125em;
+  height: 6.125em;
+  margin: 0 auto;
+  background: linear-gradient(#b7b8bb, #cccdcf 50%, #d9dadb 80%, #cccdcf, #bfc0c3);
+  transform: perspective(50em) rotate3d(1, 0, 0, 30deg);
+}
+
+.md-imac .md-foot {
+  width: 15em;
+  height: 3.125em;
+  margin: 0 auto;
+  position: relative;
+  bottom: 1.5em;
+  border-radius: 0 0 0.625em 0.625em;
+  background: linear-gradient(#bfc0c3 20%, #cccdcf);
+  transform: perspective(11.875em) rotate3d(1, 0, 0,70deg);
+  box-shadow: 0 0.375em 0 #bfc0c3;
+}
+
+.collection-name-input {
+  border: 1px solid #dbdbdb!important;
+  border-radius: 10px !important;
+}
+
+.collection-description-input{
+  border: 1px solid #dbdbdb!important;
+  border-radius: 10px !important;
+}
+
+.lang-input{
+  border: 1px solid #dbdbdb!important;
+  border-radius: 10px !important;
+}
+
+.collection-access .Access-card{
+  border: 1px solid #eff2f7 !important;
+  border-radius: 0.4rem !important;
+}
+
+.collection-access .header-Access-card{
+  border-bottom: 1px solid #eff2f7 !important;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+
+
+.lang-drop{
+  /* width: 33.33%;
+  float: left; */
+  position: fixed !important;
+  z-index: 2;
+  margin-left: 9.5rem !important
+}
+
+.lang-drop-item{
+  overflow: hidden;
+
+  position: absolute;  /* <-- added declarations */
+
+}
+
+.form_designer-tabls {
+    background-color: transparent !important;
+}
+
+.form_designer-tabls button {
+    height: 30px;
+    width: 30px;
+}
+
+.form_designer-tabls .MuiSvgIcon-root {
+  font-size: 20px;
+}
+
+.form_designer-tabls .fa {
+  font-size: 17px;
+}
+
+.nav-tabs ul{
+  margin-top: 7px;
+  background-color: #eff2f7;
+}
+
+.topnav{
+  background: #eff2f7 !important;
+}
+
+.stroke-transparent {
+	-webkit-text-stroke: 1px  #eff2f7;;
+	-webkit-text-fill-color: transparent;
+   }
+
+
+.navTop-button .material-icons{
+  font-size: 20px !important;
+}
+
+.Api-table{
+  width: 65%;
+}
+.Api-table th {
+  background: #f6f6f6;
+  color: #444;
+  padding: 5px 7px;
+  border: 1px solid #ddd;
+}
+
+.Api-table td{
+  border: 1px solid #ddd;
+  padding: 5px 7px;
+}
+
+.demo-code {
+  font-family: "Fira Code", monospace;
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "app_id": "5f190371db85375976b48102",
+    "appName": "Admin",
+    "groupLinks": [
+      {
+        "header": "Admin",
+        "dividerBottom": false,
+        "links": [
+          {
+            "name": "user",
+            "route": "/user",
+            "icon": "account_circle",
+            "text": "User management"
+          },
+          {
+            "name": "tanant",
+            "icon": "person_add",
+            "route": "/tenant",
+            "text": "Tanant management"
+          },
+          {
+            "name": "settings",
+            "route": "/settings",
+            "icon": "settings",
+            "text": "Settings"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "app_id": "5f190371db85375976b48101",
+    "appName": "default",
+    "groupLinks": [
+      {
+        "header": "Content",
+        "dividerBottom": false,
+        "links": [
+          {
+            "name": "Dashboard",
+            "route": "",
+            "icon": "dashboard",
+            "text": "Dashboard"
+          },
+          {
+            "name": "collection-list",
+            "route": "/collection-list",
+            "icon": "view_module",
+            "text": "Collections"
+          },
+          {
+            "name": "folder-list",
+            "route": "/containers",
+            "icon": "folder",
+            "text": "File Folders"
+          },
+          {
+            "name": "lists-list",
+            "route": "/connections",
+            "icon": "format_list_bulleted",
+            "text": "Lists"
+          },
+          {
+            "name": "page-list",
+            "route": "/collection-list",
+            "icon": "description",
+            "text": "Web Pages"
+          },
+          {
+            "name": "External Content",
+            "route": "/external-collection",
+            "icon": "build",
+            "text": "Workflow Tasks"
+          }
+        ]
+      },
+      {
+        "header": "Setup",
+        "dividerBottom": false,
+        "links": [
+          {
+            "name": "connection-list",
+            "route": "/connections",
+            "icon": "settings_input_component",
+            "text": "Connections"
+          },
+          {
+            "name": "connection-list",
+            "route": "/apps/dashboard",
+            "icon": "today",
+            "text": "Scheduler"
+          },
+          {
+            "name": "events-list",
+            "route": "/events",
+            "icon": "hearing",
+            "text": "Events"
+          },
+          {
+            "name": "workflow-list",
+            "route": "/workflow",
+            "icon": "extension",
+            "text": "Workflows"
+          },
+          {
+            "name": "sidenav-setup",
+            "route": "/sidenav-setup",
+            "icon": "settings",
+            "text": "Sidenav"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "app_id": "5f190371db85375976b48103",
+    "appName": "Forms",
+    "groupLinks": [
+      {
+        "header": "Content",
+        "dividerBottom": false,
+        "links": [
+          {
+            "name": "Dashboard",
+            "route": "",
+            "icon": "dashboard",
+            "text": "Dashboard"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "app_id": "0",
+    "appName": "default",
+    "groupLinks": [
+      {
+        "header": "Custom Links",
+        "dividerBottom": true,
+        "links": [
+          {
+            "name": "Dashboard",
+            "route": "/apps/dashboard",
+            "icon": "dashboard",
+            "text": "Dashboard"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+.Calendar-container {
+  min-height: 100vh;
+  background-color: #f8f6f6;
+  margin: 0px 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.Calendar-container .form-control {
+  background-color: #fff !important;
+  background-clip: padding-box;
+  border: 1px solid #ced4da !important;
+  border-radius: 0.25rem !important;
+}
+
+.daterangepicker {
+  position: relative;
+  width: 100%;
+}
+.daterangepicker .drp-calendar {
+  width: 50%;
+  max-width: none;
+  float: left !important;
+  clear: none !important;
+}
+
+/* .DatePickerClass > div{
+  margin-left: -14px;
+} */
+
+.react-datepicker {
+  border: inherit !important;
+}
+.eventlist {
+  width: 100%;
+  border-left: 1px solid #d5cfcf;
+}
+
+.selectedData {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.rigth-arrow {
+  position: absolute;
+  right: 0;
+  font-size: 40px;
+}
+
+.eventlist-tr {
+  position: relative;
+  display: flex;
+  border: 2px solid #e6e6e6;
+  padding: 5px;
+  margin: 10px;
+}
+
+.eventlist-time {
+  border-right: 2px solid red;
+  padding-right: 10px;
+}
+
+.eventlist-time p {
+  margin-left: 10px;
+  margin-bottom: 0px !important;
+}
+
+.eventlist-title {
+  margin-left: 10px;
+}
+
+.eventlist-action {
+  right: 0;
+  position: absolute;
+}
+
+.eventlist-action button {
+  margin: 0px 10px 0px 0px;
+  padding: 10px;
+  background-color: #fff !important;
+  color: red !important;
+  border-radius: 5px;
+  border: 2px solid red !important;
+  width: 100px;
+  height: 30px;
+  line-height: 0.7;
+  margin-top: 5px;
+  text-transform: capitalize !important;
+  font-weight: 900;
+}
+
+.addevent {
+  color: #007bff;
+  background: #f8f9fa;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.nav-pills .nav-link {
+  color: #555;
+}
+
+.nav-pills {
+  background: gainsboro;
+  margin-bottom: 10px;
+}
+
+.active-nav-link{
+  background: #17a2b8;
+  color: #fff;
+}
