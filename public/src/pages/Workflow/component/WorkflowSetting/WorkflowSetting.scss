@@ -1,0 +1,10 @@
+@import '../../../../assets/scss/base';
+
+.workflow-setting-container {
+    .workflow-setting-inner {
+        button[type="submit"] {
+            display: none
+        }
+    }
+
+}

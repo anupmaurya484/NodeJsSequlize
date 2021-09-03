@@ -1,0 +1,10 @@
+.table-nowrap tr{
+
+    position: relative;
+    
+}
+
+.table-nowrap th{
+        width: 25% !important;
+        
+}

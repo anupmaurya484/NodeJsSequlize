@@ -1,0 +1,39 @@
+.panel {
+    width: 98%;
+    /* max-width: 1440px; */
+    margin: 0 auto !important;
+    padding: 0px;
+    border-radius: 6px;
+    font-size: 15px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.panel .panel-heading {
+    position: relative;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 8px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    min-height: 51px;
+    border-bottom: none;
+}
+
+.panel.box-shadow-none,
+.box-shadow-none {
+    box-shadow: none !important;
+}
+
+.panel.box-shadow-none .card {
+    padding: 20px;
+}
+
+.MuiInput-underline-14:before{
+    border-bottom : inherit !important;
+}

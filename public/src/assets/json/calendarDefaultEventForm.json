@@ -1,0 +1,2180 @@
+{
+  "display": "form",
+  "components": [
+    {
+      "label": "Title",
+      "labelPosition": "top",
+      "placeholder": "",
+      "description": "",
+      "tooltip": "",
+      "prefix": "",
+      "suffix": "",
+      "widget": {
+        "type": "input"
+      },
+      "inputMask": "",
+      "allowMultipleMasks": false,
+      "customClass": "",
+      "tabindex": "",
+      "hidden": false,
+      "hideLabel": false,
+      "showWordCount": false,
+      "showCharCount": false,
+      "mask": false,
+      "autofocus": false,
+      "spellcheck": true,
+      "disabled": false,
+      "tableView": true,
+      "modalEdit": false,
+      "multiple": false,
+      "persistent": true,
+      "inputFormat": "plain",
+      "protected": false,
+      "dbIndex": false,
+      "case": "",
+      "encrypted": false,
+      "redrawOn": "",
+      "clearOnHide": true,
+      "customDefaultValue": "",
+      "calculateValue": "",
+      "calculateServer": false,
+      "allowCalculateOverride": false,
+      "validateOn": "change",
+      "validate": {
+        "required": true,
+        "pattern": "",
+        "customMessage": "",
+        "custom": "",
+        "customPrivate": false,
+        "json": "",
+        "minLength": "",
+        "maxLength": "",
+        "strictDateValidation": false,
+        "multiple": false,
+        "unique": false
+      },
+      "unique": false,
+      "errorLabel": "",
+      "key": "title",
+      "tags": [],
+      "properties": {},
+      "conditional": {
+        "show": null,
+        "when": null,
+        "eq": "",
+        "json": ""
+      },
+      "customConditional": "",
+      "logic": [],
+      "attributes": {},
+      "overlay": {
+        "style": "",
+        "page": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+      },
+      "type": "textfield",
+      "labelWidth": 17,
+      "labelMargin": 2,
+      "input": true,
+      "hideOnChildrenHidden": false,
+      "refreshOn": "",
+      "inputType": "text",
+      "id": "erqqij5",
+      "defaultValue": ""
+    },
+    {
+      "label": "Columns",
+      "columns": [
+        {
+          "components": [
+            {
+              "label": "From",
+              "format": "yyyy-MM-dd",
+              "tableView": false,
+              "datePicker": {
+                "disableFunction": "date < moment().add(-1, 'd')",
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "showWeeks": true,
+                "startingDay": 0,
+                "initDate": "",
+                "minMode": "day",
+                "maxMode": "year",
+                "yearRows": 4,
+                "yearColumns": 5,
+                "minDate": null,
+                "maxDate": null
+              },
+              "enableTime": false,
+              "customDefaultValue": "value = moment().format()",
+              "calculateServer": false,
+              "key": "startTime",
+              "type": "datetime",
+              "input": true,
+              "suffix": "<i ref=\"icon\" class=\"fa fa-calendar\" style=\"\"></i>",
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "language": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": false,
+                "noCalendar": false,
+                "format": "yyyy-MM-dd",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": false,
+                "minDate": null,
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "disableFunction": "date < moment().add(-1, 'd')",
+                "maxDate": null
+              },
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "multiple": false,
+              "defaultValue": "",
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "calculateValue": "",
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "useLocaleSettings": false,
+              "allowInput": true,
+              "enableDate": true,
+              "defaultDate": "",
+              "displayInTimezone": "viewer",
+              "timezone": "",
+              "datepickerMode": "day",
+              "timePicker": {
+                "hourStep": 1,
+                "minuteStep": 1,
+                "showMeridian": true,
+                "readonlyInput": false,
+                "mousewheel": true,
+                "arrowkeys": true
+              },
+              "customOptions": {},
+              "id": "eik75n"
+            }
+          ],
+          "width": 3,
+          "offset": 0,
+          "push": 0,
+          "pull": 0,
+          "size": "md"
+        },
+        {
+          "components": [
+            {
+              "label": "Time",
+              "tableView": true,
+              "customDefaultValue": "value = moment(data.startTime).format('HH.mm')",
+              "calculateServer": false,
+              "key": "fromTime",
+              "type": "time",
+              "input": true,
+              "inputMask": "99:99",
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "defaultValue": null,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "calculateValue": "",
+              "widget": {
+                "type": "input"
+              },
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputType": "time",
+              "inputFormat": "plain",
+              "format": "HH:mm",
+              "dataFormat": "HH:mm:ss",
+              "id": "enw40n"
+            }
+          ],
+          "size": "md",
+          "width": 3,
+          "offset": 0,
+          "push": 0,
+          "pull": 0
+        },
+        {
+          "components": [
+            {
+              "label": "To",
+              "format": "yyyy-MM-dd",
+              "tableView": false,
+              "datePicker": {
+                "disableFunction": "date < moment().add(-1, 'd')",
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "showWeeks": true,
+                "startingDay": 0,
+                "initDate": "",
+                "minMode": "day",
+                "maxMode": "year",
+                "yearRows": 4,
+                "yearColumns": 5,
+                "minDate": null,
+                "maxDate": null
+              },
+              "enableTime": false,
+              "customDefaultValue": "value = moment().format()",
+              "calculateServer": false,
+              "key": "endTime",
+              "logic": [
+                {
+                  "name": "disableComponentLogic",
+                  "trigger": {
+                    "type": "simple",
+                    "simple": {
+                      "show": true,
+                      "when": "allDay",
+                      "eq": "true"
+                    }
+                  },
+                  "actions": [
+                    {
+                      "name": "disableComponent",
+                      "type": "property",
+                      "property": {
+                        "label": "Disabled",
+                        "value": "disabled",
+                        "type": "boolean"
+                      },
+                      "state": true
+                    }
+                  ]
+                }
+              ],
+              "type": "datetime",
+              "input": true,
+              "suffix": "<i ref=\"icon\" class=\"fa fa-calendar\" style=\"\"></i>",
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "language": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": false,
+                "noCalendar": false,
+                "format": "yyyy-MM-dd",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": false,
+                "minDate": null,
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "disableFunction": "date < moment().add(-1, 'd')",
+                "maxDate": null
+              },
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "multiple": false,
+              "defaultValue": "",
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "calculateValue": "",
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "useLocaleSettings": false,
+              "allowInput": true,
+              "enableDate": true,
+              "defaultDate": "",
+              "displayInTimezone": "viewer",
+              "timezone": "",
+              "datepickerMode": "day",
+              "timePicker": {
+                "hourStep": 1,
+                "minuteStep": 1,
+                "showMeridian": true,
+                "readonlyInput": false,
+                "mousewheel": true,
+                "arrowkeys": true
+              },
+              "customOptions": {},
+              "id": "enmcann"
+            }
+          ],
+          "size": "md",
+          "width": 3,
+          "offset": 0,
+          "push": 0,
+          "pull": 0
+        },
+        {
+          "components": [
+            {
+              "label": "Time",
+              "labelPosition": "top",
+              "inputType": "time",
+              "description": "",
+              "tooltip": "",
+              "customClass": "",
+              "tabindex": "",
+              "hidden": false,
+              "hideLabel": false,
+              "autofocus": false,
+              "disabled": false,
+              "tableView": true,
+              "modalEdit": false,
+              "multiple": false,
+              "dataFormat": "HH:mm:ss",
+              "persistent": true,
+              "protected": false,
+              "dbIndex": false,
+              "encrypted": false,
+              "redrawOn": "",
+              "clearOnHide": true,
+              "customDefaultValue": "value = moment(data.endTime).format('HH.mm')",
+              "calculateValue": "",
+              "calculateServer": false,
+              "allowCalculateOverride": false,
+              "validate": {
+                "required": false,
+                "customMessage": "",
+                "custom": "",
+                "customPrivate": false,
+                "json": "",
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": ""
+              },
+              "unique": false,
+              "validateOn": "change",
+              "errorLabel": "",
+              "key": "toTime",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [
+                {
+                  "name": "disableComponent",
+                  "trigger": {
+                    "type": "simple",
+                    "simple": {
+                      "show": true,
+                      "when": "allDay",
+                      "eq": "true"
+                    }
+                  },
+                  "actions": [
+                    {
+                      "name": "disableAction",
+                      "type": "property",
+                      "property": {
+                        "label": "Disabled",
+                        "value": "disabled",
+                        "type": "boolean"
+                      },
+                      "state": true
+                    }
+                  ]
+                }
+              ],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "type": "time",
+              "format": "HH:mm",
+              "input": true,
+              "inputMask": "99:99",
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "suffix": "",
+              "refreshOn": "",
+              "widget": {
+                "type": "input"
+              },
+              "showCharCount": false,
+              "showWordCount": false,
+              "allowMultipleMasks": false,
+              "mask": false,
+              "inputFormat": "plain",
+              "id": "eevm9xk",
+              "defaultValue": ""
+            }
+          ],
+          "size": "md",
+          "width": 3,
+          "offset": 0,
+          "push": 0,
+          "pull": 0
+        }
+      ],
+      "tableView": false,
+      "key": "columns6",
+      "type": "columns",
+      "input": false,
+      "placeholder": "",
+      "prefix": "",
+      "customClass": "",
+      "suffix": "",
+      "multiple": false,
+      "defaultValue": null,
+      "protected": false,
+      "unique": false,
+      "persistent": false,
+      "hidden": false,
+      "clearOnHide": false,
+      "refreshOn": "",
+      "redrawOn": "",
+      "modalEdit": false,
+      "labelPosition": "top",
+      "description": "",
+      "errorLabel": "",
+      "tooltip": "",
+      "hideLabel": false,
+      "tabindex": "",
+      "disabled": false,
+      "autofocus": false,
+      "dbIndex": false,
+      "customDefaultValue": "",
+      "calculateValue": "",
+      "widget": null,
+      "attributes": {},
+      "validateOn": "change",
+      "validate": {
+        "required": false,
+        "custom": "",
+        "customPrivate": false,
+        "strictDateValidation": false,
+        "multiple": false,
+        "unique": false
+      },
+      "conditional": {
+        "show": null,
+        "when": null,
+        "eq": ""
+      },
+      "overlay": {
+        "style": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+      },
+      "allowCalculateOverride": false,
+      "encrypted": false,
+      "showCharCount": false,
+      "showWordCount": false,
+      "properties": {},
+      "allowMultipleMasks": false,
+      "tree": false,
+      "autoAdjust": false,
+      "hideOnChildrenHidden": false,
+      "id": "ev23rj4"
+    },
+    {
+      "label": "Columns",
+      "columns": [
+        {
+          "components": [
+            {
+              "label": "All day",
+              "tableView": false,
+              "defaultValue": false,
+              "calculateServer": false,
+              "key": "allDay",
+              "type": "checkbox",
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "right",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "inputType": "checkbox",
+              "dataGridLabel": true,
+              "value": "",
+              "name": "",
+              "id": "e7wlcn"
+            }
+          ],
+          "width": 3,
+          "offset": 0,
+          "push": 0,
+          "pull": 0,
+          "size": "md"
+        },
+        {
+          "components": [
+            {
+              "label": "Repeat",
+              "tableView": false,
+              "defaultValue": false,
+              "calculateServer": false,
+              "key": "isRepeating",
+              "type": "checkbox",
+              "labelWidth": 30,
+              "labelMargin": 3,
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "right",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "hideLabel": false,
+              "tabindex": "",
+              "disabled": false,
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "inputType": "checkbox",
+              "dataGridLabel": true,
+              "value": "",
+              "name": "",
+              "id": "eorv57i"
+            }
+          ],
+          "width": 3,
+          "offset": 0,
+          "push": 0,
+          "pull": 0,
+          "size": "md"
+        },
+        {
+          "components": [
+            {
+              "label": "Interval",
+              "labelPosition": "left-left",
+              "optionsLabelPosition": "right",
+              "inline": true,
+              "hideLabel": true,
+              "disabled": true,
+              "tableView": false,
+              "defaultValue": "hourly",
+              "values": [
+                {
+                  "label": "Daily",
+                  "value": "daily",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Weekly",
+                  "value": "weekly",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Monthly",
+                  "value": "monthly",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Yearly",
+                  "value": "yearly",
+                  "shortcut": ""
+                }
+              ],
+              "customDefaultValue": "value = \"hourly\"",
+              "calculateServer": false,
+              "key": "repeatsInterval",
+              "logic": [
+                {
+                  "name": "enableDisable",
+                  "trigger": {
+                    "type": "simple",
+                    "simple": {
+                      "show": true,
+                      "when": "isRepeating",
+                      "eq": "true"
+                    }
+                  },
+                  "actions": [
+                    {
+                      "name": "enableThis",
+                      "type": "property",
+                      "property": {
+                        "label": "Disabled",
+                        "value": "disabled",
+                        "type": "boolean"
+                      },
+                      "state": false
+                    }
+                  ]
+                }
+              ],
+              "type": "radio",
+              "labelMargin": 5,
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "tabindex": "",
+              "autofocus": false,
+              "dbIndex": false,
+              "calculateValue": "",
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "inputType": "radio",
+              "fieldSet": false,
+              "id": "eqptxb"
+            }
+          ],
+          "size": "md",
+          "width": 6,
+          "offset": 0,
+          "push": 0,
+          "pull": 0
+        }
+      ],
+      "tableView": false,
+      "key": "columns2",
+      "type": "columns",
+      "input": false,
+      "placeholder": "",
+      "prefix": "",
+      "customClass": "",
+      "suffix": "",
+      "multiple": false,
+      "defaultValue": null,
+      "protected": false,
+      "unique": false,
+      "persistent": false,
+      "hidden": false,
+      "clearOnHide": false,
+      "refreshOn": "",
+      "redrawOn": "",
+      "modalEdit": false,
+      "labelPosition": "top",
+      "description": "",
+      "errorLabel": "",
+      "tooltip": "",
+      "hideLabel": false,
+      "tabindex": "",
+      "disabled": false,
+      "autofocus": false,
+      "dbIndex": false,
+      "customDefaultValue": "",
+      "calculateValue": "",
+      "widget": null,
+      "attributes": {},
+      "validateOn": "change",
+      "validate": {
+        "required": false,
+        "custom": "",
+        "customPrivate": false,
+        "strictDateValidation": false,
+        "multiple": false,
+        "unique": false
+      },
+      "conditional": {
+        "show": null,
+        "when": null,
+        "eq": ""
+      },
+      "overlay": {
+        "style": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+      },
+      "allowCalculateOverride": false,
+      "encrypted": false,
+      "showCharCount": false,
+      "showWordCount": false,
+      "properties": {},
+      "allowMultipleMasks": false,
+      "tree": false,
+      "autoAdjust": false,
+      "hideOnChildrenHidden": false,
+      "id": "ewept8"
+    },
+    {
+      "label": "Columns",
+      "columns": [
+        {
+          "components": [
+            {
+              "label": "Select Boxes",
+              "optionsLabelPosition": "right",
+              "inline": true,
+              "hidden": true,
+              "hideLabel": true,
+              "disabled": true,
+              "tableView": false,
+              "defaultValue": {
+                "0": false,
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "": false,
+                "monday": false,
+                "tuesday": false,
+                "wednesday": false,
+                "thursday": false,
+                "friday": false,
+                "saturday": false,
+                "sunday": false
+              },
+              "values": [
+                {
+                  "label": "Monday",
+                  "value": "monday",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Tuesday",
+                  "value": "2",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Wednesday",
+                  "value": "3",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Thursday",
+                  "value": "4",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Friday",
+                  "value": "5",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Saturday",
+                  "value": "6",
+                  "shortcut": ""
+                },
+                {
+                  "label": "Sunday",
+                  "value": "0",
+                  "shortcut": ""
+                }
+              ],
+              "calculateServer": false,
+              "key": "weekdays",
+              "logic": [
+                {
+                  "name": "enableDisable",
+                  "trigger": {
+                    "type": "json",
+                    "simple": {
+                      "show": true,
+                      "when": "repeatsInterval",
+                      "eq": "weekly, monthly"
+                    },
+                    "json": {
+                      "in": [
+                        {
+                          "var": "data.repeatsInterval"
+                        },
+                        [
+                          "weekly",
+                          "monthly"
+                        ]
+                      ]
+                    }
+                  },
+                  "actions": [
+                    {
+                      "name": "enableThis",
+                      "type": "property",
+                      "property": {
+                        "label": "Disabled",
+                        "value": "disabled",
+                        "type": "boolean"
+                      },
+                      "state": false
+                    },
+                    {
+                      "name": "show",
+                      "type": "property",
+                      "property": {
+                        "label": "Hidden",
+                        "value": "hidden",
+                        "type": "boolean"
+                      },
+                      "state": false
+                    }
+                  ]
+                }
+              ],
+              "type": "selectboxes",
+              "input": true,
+              "inputType": "checkbox",
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "tabindex": "",
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "allowCalculateOverride": false,
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "fieldSet": false,
+              "id": "elieg4"
+            },
+            {
+              "label": "Select Boxes",
+              "optionsLabelPosition": "right",
+              "inline": true,
+              "hidden": true,
+              "hideLabel": true,
+              "disabled": true,
+              "tableView": false,
+              "defaultValue": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "8": false,
+                "9": false,
+                "10": false,
+                "11": false,
+                "12": false,
+                "13": false,
+                "14": false,
+                "15": false,
+                "16": false,
+                "17": false,
+                "18": false,
+                "19": false,
+                "20": false,
+                "21": false,
+                "22": false,
+                "23": false,
+                "24": false,
+                "25": false,
+                "26": false,
+                "27": false,
+                "28": false,
+                "29": false,
+                "30": false,
+                "31": false,
+                "": false
+              },
+              "values": [
+                {
+                  "label": "1",
+                  "value": "1",
+                  "shortcut": ""
+                },
+                {
+                  "label": "2",
+                  "value": "2",
+                  "shortcut": ""
+                },
+                {
+                  "label": "3",
+                  "value": "3",
+                  "shortcut": ""
+                },
+                {
+                  "label": "4",
+                  "value": "4",
+                  "shortcut": ""
+                },
+                {
+                  "label": "5",
+                  "value": "5",
+                  "shortcut": ""
+                },
+                {
+                  "label": "6",
+                  "value": "6",
+                  "shortcut": ""
+                },
+                {
+                  "label": "7",
+                  "value": "7",
+                  "shortcut": ""
+                },
+                {
+                  "label": "8",
+                  "value": "8",
+                  "shortcut": ""
+                },
+                {
+                  "label": "9",
+                  "value": "9",
+                  "shortcut": ""
+                },
+                {
+                  "label": "10",
+                  "value": "10",
+                  "shortcut": ""
+                },
+                {
+                  "label": "11",
+                  "value": "11",
+                  "shortcut": ""
+                },
+                {
+                  "label": "12",
+                  "value": "12",
+                  "shortcut": ""
+                },
+                {
+                  "label": "13",
+                  "value": "13",
+                  "shortcut": ""
+                },
+                {
+                  "label": "14",
+                  "value": "14",
+                  "shortcut": ""
+                },
+                {
+                  "label": "15",
+                  "value": "15",
+                  "shortcut": ""
+                },
+                {
+                  "label": "16",
+                  "value": "16",
+                  "shortcut": ""
+                },
+                {
+                  "label": "17",
+                  "value": "17",
+                  "shortcut": ""
+                },
+                {
+                  "label": "18",
+                  "value": "18",
+                  "shortcut": ""
+                },
+                {
+                  "label": "19",
+                  "value": "19",
+                  "shortcut": ""
+                },
+                {
+                  "label": "20",
+                  "value": "20",
+                  "shortcut": ""
+                },
+                {
+                  "label": "21",
+                  "value": "21",
+                  "shortcut": ""
+                },
+                {
+                  "label": "22",
+                  "value": "22",
+                  "shortcut": ""
+                },
+                {
+                  "label": "23",
+                  "value": "23",
+                  "shortcut": ""
+                },
+                {
+                  "label": "24",
+                  "value": "24",
+                  "shortcut": ""
+                },
+                {
+                  "label": "25",
+                  "value": "25",
+                  "shortcut": ""
+                },
+                {
+                  "label": "26",
+                  "value": "26",
+                  "shortcut": ""
+                },
+                {
+                  "label": "27",
+                  "value": "27",
+                  "shortcut": ""
+                },
+                {
+                  "label": "28",
+                  "value": "28",
+                  "shortcut": ""
+                },
+                {
+                  "label": "29",
+                  "value": "29",
+                  "shortcut": ""
+                },
+                {
+                  "label": "30",
+                  "value": "30",
+                  "shortcut": ""
+                },
+                {
+                  "label": "31",
+                  "value": "31",
+                  "shortcut": ""
+                }
+              ],
+              "calculateServer": false,
+              "allowCalculateOverride": true,
+              "key": "days",
+              "logic": [
+                {
+                  "name": "disableEnable",
+                  "trigger": {
+                    "type": "simple",
+                    "simple": {
+                      "show": true,
+                      "when": "repeatsInterval",
+                      "eq": "monthly"
+                    }
+                  },
+                  "actions": [
+                    {
+                      "name": "enableThis",
+                      "type": "property",
+                      "property": {
+                        "label": "Disabled",
+                        "value": "disabled",
+                        "type": "boolean"
+                      },
+                      "state": false
+                    },
+                    {
+                      "name": "show",
+                      "type": "property",
+                      "property": {
+                        "label": "Hidden",
+                        "value": "hidden",
+                        "type": "boolean"
+                      },
+                      "state": false
+                    }
+                  ]
+                }
+              ],
+              "type": "selectboxes",
+              "input": true,
+              "inputType": "checkbox",
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "customClass": "",
+              "suffix": "",
+              "multiple": false,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "clearOnHide": true,
+              "refreshOn": "",
+              "redrawOn": "",
+              "modalEdit": false,
+              "labelPosition": "top",
+              "description": "",
+              "errorLabel": "",
+              "tooltip": "",
+              "tabindex": "",
+              "autofocus": false,
+              "dbIndex": false,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "widget": null,
+              "attributes": {},
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "custom": "",
+                "customPrivate": false,
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": ""
+              },
+              "overlay": {
+                "style": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "encrypted": false,
+              "showCharCount": false,
+              "showWordCount": false,
+              "properties": {},
+              "allowMultipleMasks": false,
+              "fieldSet": false,
+              "id": "e2lmhpvs"
+            }
+          ],
+          "width": 10,
+          "offset": 0,
+          "push": 0,
+          "pull": 0,
+          "size": "md"
+        },
+        {
+          "components": [],
+          "width": 2,
+          "offset": 0,
+          "push": 0,
+          "pull": 0,
+          "size": "md"
+        }
+      ],
+      "tableView": false,
+      "key": "columns",
+      "type": "columns",
+      "input": false,
+      "placeholder": "",
+      "prefix": "",
+      "customClass": "",
+      "suffix": "",
+      "multiple": false,
+      "defaultValue": null,
+      "protected": false,
+      "unique": false,
+      "persistent": false,
+      "hidden": false,
+      "clearOnHide": false,
+      "refreshOn": "",
+      "redrawOn": "",
+      "modalEdit": false,
+      "labelPosition": "top",
+      "description": "",
+      "errorLabel": "",
+      "tooltip": "",
+      "hideLabel": false,
+      "tabindex": "",
+      "disabled": false,
+      "autofocus": false,
+      "dbIndex": false,
+      "customDefaultValue": "",
+      "calculateValue": "",
+      "widget": null,
+      "attributes": {},
+      "validateOn": "change",
+      "validate": {
+        "required": false,
+        "custom": "",
+        "customPrivate": false,
+        "strictDateValidation": false,
+        "multiple": false,
+        "unique": false
+      },
+      "conditional": {
+        "show": null,
+        "when": null,
+        "eq": ""
+      },
+      "overlay": {
+        "style": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+      },
+      "allowCalculateOverride": false,
+      "encrypted": false,
+      "showCharCount": false,
+      "showWordCount": false,
+      "properties": {},
+      "allowMultipleMasks": false,
+      "tree": false,
+      "autoAdjust": false,
+      "hideOnChildrenHidden": false,
+      "id": "eg5icc"
+    },
+    {
+      "label": "Columns",
+      "columns": [
+        {
+          "components": [
+            {
+              "label": "Radio",
+              "labelPosition": "top",
+              "optionsLabelPosition": "right",
+              "description": "",
+              "tooltip": "",
+              "customClass": "",
+              "tabindex": "",
+              "inline": true,
+              "hidden": false,
+              "hideLabel": true,
+              "autofocus": false,
+              "disabled": false,
+              "tableView": false,
+              "modalEdit": false,
+              "values": [
+                {
+                  "label": "Until",
+                  "value": "until",
+                  "shortcut": ""
+                },
+                {
+                  "label": "For",
+                  "value": "for",
+                  "shortcut": ""
+                }
+              ],
+              "dataType": "",
+              "persistent": true,
+              "protected": false,
+              "dbIndex": false,
+              "encrypted": false,
+              "redrawOn": "",
+              "clearOnHide": true,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "allowCalculateOverride": false,
+              "validate": {
+                "required": false,
+                "customMessage": "",
+                "custom": "",
+                "customPrivate": false,
+                "json": "",
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "errorLabel": "",
+              "key": "repeatEnd",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": null,
+                "when": null,
+                "eq": "",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "type": "radio",
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "placeholder": "",
+              "prefix": "",
+              "suffix": "",
+              "multiple": false,
+              "unique": false,
+              "refreshOn": "",
+              "widget": null,
+              "validateOn": "change",
+              "showCharCount": false,
+              "showWordCount": false,
+              "allowMultipleMasks": false,
+              "inputType": "radio",
+              "fieldSet": false,
+              "id": "e8xri0h",
+              "defaultValue": "until"
+            }
+          ],
+          "width": 2,
+          "offset": 0,
+          "push": 0,
+          "pull": 0,
+          "size": "md"
+        },
+        {
+          "components": [
+            {
+              "label": "limit",
+              "labelPosition": "top",
+              "placeholder": "",
+              "description": "",
+              "tooltip": "",
+              "prefix": "",
+              "suffix": "times",
+              "widget": {
+                "type": "input"
+              },
+              "customClass": "",
+              "tabindex": "",
+              "hidden": false,
+              "hideLabel": true,
+              "mask": false,
+              "autofocus": false,
+              "spellcheck": true,
+              "disabled": false,
+              "tableView": false,
+              "modalEdit": false,
+              "multiple": false,
+              "persistent": true,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "protected": false,
+              "dbIndex": false,
+              "encrypted": false,
+              "redrawOn": "",
+              "clearOnHide": true,
+              "customDefaultValue": "",
+              "calculateValue": "",
+              "calculateServer": false,
+              "allowCalculateOverride": false,
+              "validateOn": "change",
+              "validate": {
+                "required": false,
+                "customMessage": "",
+                "custom": "",
+                "customPrivate": false,
+                "json": "",
+                "min": "",
+                "max": "",
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false,
+                "step": "any",
+                "integer": ""
+              },
+              "errorLabel": "",
+              "key": "limit",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": true,
+                "when": "repeatEnd",
+                "eq": "for",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [
+                {
+                  "name": "enableInput",
+                  "trigger": {
+                    "type": "simple",
+                    "simple": {
+                      "show": true,
+                      "when": "ends",
+                      "eq": "for"
+                    }
+                  },
+                  "actions": [
+                    {
+                      "name": "enableComponent",
+                      "type": "property",
+                      "property": {
+                        "label": "Disabled",
+                        "value": "disabled",
+                        "type": "boolean"
+                      },
+                      "state": false
+                    }
+                  ]
+                }
+              ],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "type": "number",
+              "input": true,
+              "hideOnChildrenHidden": false,
+              "unique": false,
+              "refreshOn": "",
+              "showCharCount": false,
+              "showWordCount": false,
+              "allowMultipleMasks": false,
+              "id": "enblhl",
+              "defaultValue": null
+            },
+            {
+              "label": "Until",
+              "labelPosition": "left-left",
+              "displayInTimezone": "viewer",
+              "useLocaleSettings": false,
+              "allowInput": true,
+              "format": "yyyy-MM-dd",
+              "placeholder": "",
+              "description": "",
+              "tooltip": "",
+              "customClass": "",
+              "tabindex": "",
+              "hidden": false,
+              "hideLabel": true,
+              "autofocus": false,
+              "disabled": false,
+              "tableView": false,
+              "modalEdit": false,
+              "enableDate": true,
+              "datePicker": {
+                "minDate": null,
+                "maxDate": null,
+                "disable": "",
+                "disableFunction": "",
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "showWeeks": true,
+                "startingDay": 0,
+                "initDate": "",
+                "minMode": "day",
+                "maxMode": "year",
+                "yearRows": 4,
+                "yearColumns": 5
+              },
+              "enableTime": true,
+              "timePicker": {
+                "showMeridian": true,
+                "hourStep": 1,
+                "minuteStep": 1,
+                "readonlyInput": false,
+                "mousewheel": true,
+                "arrowkeys": true
+              },
+              "multiple": false,
+              "defaultValue": "",
+              "defaultDate": "",
+              "customOptions": {},
+              "persistent": true,
+              "protected": false,
+              "dbIndex": false,
+              "encrypted": false,
+              "redrawOn": "",
+              "clearOnHide": true,
+              "customDefaultValue": "value = moment().format()",
+              "calculateValue": "value = (data.isRepeating) ? data.startDate : value;",
+              "calculateServer": false,
+              "allowCalculateOverride": true,
+              "validate": {
+                "required": false,
+                "customMessage": "",
+                "custom": "var date1 = moment(data.startDate).startOf('day');\nvar date2 = moment(data.endDate).startOf('day');\nvalid = ( (date2 >= date1) || !data.isRepeating) ? true : \"Schedule end date must not earlier than start date\";",
+                "customPrivate": false,
+                "json": "",
+                "strictDateValidation": false,
+                "multiple": false,
+                "unique": false
+              },
+              "unique": false,
+              "validateOn": "change",
+              "errorLabel": "",
+              "key": "untilDate",
+              "tags": [],
+              "properties": {},
+              "conditional": {
+                "show": true,
+                "when": "repeatEnd",
+                "eq": "until",
+                "json": ""
+              },
+              "customConditional": "",
+              "logic": [],
+              "attributes": {},
+              "overlay": {
+                "style": "",
+                "page": "",
+                "left": "",
+                "top": "",
+                "width": "",
+                "height": ""
+              },
+              "type": "datetime",
+              "timezone": "",
+              "input": true,
+              "suffix": "<i ref=\"icon\" class=\"fa fa-calendar\" style=\"\"></i>",
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "language": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": true,
+                "noCalendar": false,
+                "format": "yyyy-MM-dd",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": false,
+                "minDate": null,
+                "disabledDates": "",
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "disableFunction": "",
+                "maxDate": null
+              },
+              "hideOnChildrenHidden": false,
+              "prefix": "",
+              "refreshOn": "",
+              "showCharCount": false,
+              "showWordCount": false,
+              "allowMultipleMasks": false,
+              "datepickerMode": "day",
+              "id": "egl6jxo"
+            }
+          ],
+          "width": 5,
+          "offset": 0,
+          "push": 0,
+          "pull": 0,
+          "size": "md"
+        },
+        {
+          "components": [],
+          "size": "md",
+          "width": 5,
+          "offset": 0,
+          "push": 0,
+          "pull": 0
+        }
+      ],
+      "autoAdjust": false,
+      "hideOnChildrenHidden": false,
+      "customClass": "",
+      "hidden": false,
+      "hideLabel": false,
+      "tableView": false,
+      "modalEdit": false,
+      "key": "columns5",
+      "tags": [],
+      "properties": {},
+      "conditional": {
+        "show": null,
+        "when": null,
+        "eq": "",
+        "json": ""
+      },
+      "customConditional": "",
+      "logic": [],
+      "attributes": {},
+      "overlay": {
+        "style": "",
+        "page": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+      },
+      "type": "columns",
+      "input": false,
+      "placeholder": "",
+      "prefix": "",
+      "suffix": "",
+      "multiple": false,
+      "defaultValue": null,
+      "protected": false,
+      "unique": false,
+      "persistent": false,
+      "clearOnHide": false,
+      "refreshOn": "",
+      "redrawOn": "",
+      "labelPosition": "top",
+      "description": "",
+      "errorLabel": "",
+      "tooltip": "",
+      "tabindex": "",
+      "disabled": false,
+      "autofocus": false,
+      "dbIndex": false,
+      "customDefaultValue": "",
+      "calculateValue": "",
+      "widget": null,
+      "validateOn": "change",
+      "validate": {
+        "required": false,
+        "custom": "",
+        "customPrivate": false,
+        "strictDateValidation": false,
+        "multiple": false,
+        "unique": false
+      },
+      "allowCalculateOverride": false,
+      "encrypted": false,
+      "showCharCount": false,
+      "showWordCount": false,
+      "allowMultipleMasks": false,
+      "tree": false,
+      "id": "e0a01u"
+    },
+    {
+      "label": "Attendees",
+      "labelPosition": "top",
+      "placeholder": "",
+      "description": "",
+      "tooltip": "Enter email and press enter to add to the attendees list",
+      "customClass": "",
+      "tabindex": "",
+      "hidden": false,
+      "hideLabel": false,
+      "autofocus": false,
+      "disabled": false,
+      "tableView": false,
+      "modalEdit": false,
+      "delimeter": ",",
+      "maxTags": 0,
+      "storeas": "array",
+      "persistent": true,
+      "protected": false,
+      "dbIndex": false,
+      "encrypted": false,
+      "redrawOn": "",
+      "clearOnHide": true,
+      "customDefaultValue": "",
+      "calculateValue": "",
+      "calculateServer": false,
+      "allowCalculateOverride": false,
+      "validate": {
+        "required": false,
+        "customMessage": "",
+        "custom": "valid = (input.map(em => /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(em))).includes(false)? \"At least one of the entries is not a valide email\":true",
+        "customPrivate": false,
+        "json": "",
+        "unique": true,
+        "strictDateValidation": false,
+        "multiple": false
+      },
+      "unique": true,
+      "validateOn": "change",
+      "errorLabel": "",
+      "key": "attendees",
+      "tags": [],
+      "properties": {},
+      "conditional": {
+        "show": null,
+        "when": null,
+        "eq": "",
+        "json": ""
+      },
+      "customConditional": "",
+      "logic": [],
+      "attributes": {},
+      "overlay": {
+        "style": "",
+        "page": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+      },
+      "type": "tags",
+      "labelWidth": 16,
+      "input": true,
+      "hideOnChildrenHidden": false,
+      "prefix": "",
+      "suffix": "",
+      "multiple": false,
+      "refreshOn": "",
+      "widget": {
+        "type": "input"
+      },
+      "showCharCount": false,
+      "showWordCount": false,
+      "allowMultipleMasks": false,
+      "id": "eu90l1",
+      "defaultValue": []
+    },
+    {
+      "label": "Description",
+      "labelPosition": "top",
+      "placeholder": "",
+      "description": "",
+      "tooltip": "",
+      "prefix": "",
+      "suffix": "",
+      "widget": {
+        "type": "input"
+      },
+      "editor": "",
+      "autoExpand": false,
+      "customClass": "",
+      "tabindex": "",
+      "hidden": false,
+      "hideLabel": false,
+      "showWordCount": false,
+      "showCharCount": false,
+      "autofocus": false,
+      "spellcheck": true,
+      "disabled": false,
+      "tableView": true,
+      "modalEdit": false,
+      "multiple": false,
+      "persistent": true,
+      "inputFormat": "html",
+      "protected": false,
+      "dbIndex": false,
+      "case": "",
+      "encrypted": false,
+      "redrawOn": "",
+      "clearOnHide": true,
+      "customDefaultValue": "",
+      "calculateValue": "",
+      "calculateServer": false,
+      "allowCalculateOverride": false,
+      "validateOn": "change",
+      "validate": {
+        "required": false,
+        "pattern": "",
+        "customMessage": "",
+        "custom": "",
+        "customPrivate": false,
+        "json": "",
+        "minLength": "",
+        "maxLength": "",
+        "minWords": "",
+        "maxWords": "",
+        "strictDateValidation": false,
+        "multiple": false,
+        "unique": false
+      },
+      "unique": false,
+      "errorLabel": "",
+      "key": "description",
+      "tags": [],
+      "properties": {},
+      "conditional": {
+        "show": null,
+        "when": null,
+        "eq": "",
+        "json": ""
+      },
+      "customConditional": "",
+      "logic": [],
+      "attributes": {},
+      "overlay": {
+        "style": "",
+        "page": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+      },
+      "type": "textarea",
+      "labelWidth": 17,
+      "labelMargin": 2,
+      "rows": 3,
+      "wysiwyg": false,
+      "input": true,
+      "hideOnChildrenHidden": false,
+      "refreshOn": "",
+      "allowMultipleMasks": false,
+      "mask": false,
+      "inputType": "text",
+      "inputMask": "",
+      "id": "ea76jmj",
+      "defaultValue": ""
+    },
+    {
+      "label": "Submit",
+      "showValidations": false,
+      "theme": "primary",
+      "size": "md",
+      "block": false,
+      "leftIcon": "",
+      "rightIcon": "",
+      "shortcut": "",
+      "description": "",
+      "tooltip": "",
+      "customClass": "",
+      "tabindex": "",
+      "disableOnInvalid": false,
+      "hidden": false,
+      "autofocus": false,
+      "disabled": false,
+      "tableView": false,
+      "modalEdit": false,
+      "key": "submit",
+      "tags": [],
+      "properties": {},
+      "conditional": {
+        "show": null,
+        "when": null,
+        "eq": "",
+        "json": ""
+      },
+      "customConditional": "",
+      "logic": [],
+      "attributes": {},
+      "overlay": {
+        "style": "",
+        "page": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+      },
+      "type": "button",
+      "action": "submit",
+      "input": true,
+      "placeholder": "",
+      "prefix": "",
+      "suffix": "",
+      "multiple": false,
+      "defaultValue": null,
+      "protected": false,
+      "unique": false,
+      "persistent": false,
+      "clearOnHide": true,
+      "refreshOn": "",
+      "redrawOn": "",
+      "labelPosition": "top",
+      "errorLabel": "",
+      "hideLabel": false,
+      "dbIndex": false,
+      "customDefaultValue": "",
+      "calculateValue": "",
+      "widget": {
+        "type": "input"
+      },
+      "validateOn": "change",
+      "validate": {
+        "required": false,
+        "custom": "",
+        "customPrivate": false,
+        "strictDateValidation": false,
+        "multiple": false,
+        "unique": false
+      },
+      "allowCalculateOverride": false,
+      "encrypted": false,
+      "showCharCount": false,
+      "showWordCount": false,
+      "allowMultipleMasks": false,
+      "dataGridLabel": true,
+      "id": "ehqywt"
+    }
+  ]
+}
